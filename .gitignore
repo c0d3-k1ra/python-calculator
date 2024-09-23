@@ -1,0 +1,5 @@
+#gitignore file for python vscode
+.venv/**
+__pycache__
+.idea
+.vscode
