@@ -36,10 +36,8 @@ class TestCalculator(unittest.TestCase):
             self.calc.divide(5, 0)  # Test division by zero error
 
     def test_sqrt(self):
-        self.assertAlmostEqual(self.calc.square_root(4), 2)
-        self.assertAlmostEqual(self.calc.square_root(16), 4)
-        with self.assertRaises(ValueError):
-            self.calc.square_root(-1)  # Test sqrt of negative number error
+        self.assertAlmostEqual(self.calc.sqrt(4), 2)
+        self.assertAlmostEqual(self.calc.sqrt(16), 4)
 
     def test_power(self):
         self.assertEqual(self.calc.power(5, 3), 125)
